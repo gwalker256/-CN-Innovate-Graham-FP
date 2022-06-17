@@ -4,11 +4,27 @@ views = Blueprint("views", __name__)
 
 # view in this instance is a Blueprint
 
-task_list = []
+# task_list = []
 
 @views.route("/")
 def home():
     return render_template("index.html")
+
+@views.route("/pizzas")
+def pizzas():
+    return render_template("pizzas.html")
+
+@views.route("/sides")
+def sides():
+    return render_template("sides.html")
+
+@views.route("/desserts")
+def desserts():
+    return render_template("desserts.html")
+
+@views.route("/drinks")
+def drinks():
+    return render_template("drinks.html")
 
 
 # @views.route("/todos", methods=["GET", "POST"])
