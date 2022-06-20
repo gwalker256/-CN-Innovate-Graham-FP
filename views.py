@@ -26,6 +26,14 @@ def desserts():
 def drinks():
     return render_template("drinks.html", active="drinks")
 
+@views.errorhandler(404)
+def not_found(e):
+    return render_template("error.html"), 404
+
+
+
+
+
 
 # @views.route("/todos", methods=["GET", "POST"])
 # def todos():

@@ -12,6 +12,10 @@
     />
   </head>
   <body>
+    
+    <h2 id="checkout-link">Link to checkout</h2>
+
+
     <nav id="base-nav">
       {% if active == "home" %}
       <a href="{{ url_for('views.pizzas') }}">Pizzas</a>
@@ -49,7 +53,7 @@
     {% if active in ["pizzas", "sides", "desserts", "drinks"]: %}
 
 
-    <h2 id="checkout-link">Link to checkout</h2>
+
 
 
     {% endif %}
