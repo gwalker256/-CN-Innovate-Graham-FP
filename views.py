@@ -8,11 +8,11 @@ views = Blueprint("views", __name__)
 
 @views.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", active="home")
 
 @views.route("/pizzas")
 def pizzas():
-    return render_template("pizzas.html", active="pizza")
+    return render_template("pizzas.html", active="pizzas")
 
 @views.route("/sides")
 def sides():
