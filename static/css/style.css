@@ -1,0 +1,25 @@
+#base-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .red-link{
+    background-color: red;
+} */
+
+/* .pizzas-nav{
+    background-color: blue;
+} */
+
+body{
+    background-color: aqua;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.active{
+    background-color: red;
+}

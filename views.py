@@ -12,19 +12,19 @@ def home():
 
 @views.route("/pizzas")
 def pizzas():
-    return render_template("pizzas.html")
+    return render_template("pizzas.html", active="pizza")
 
 @views.route("/sides")
 def sides():
-    return render_template("sides.html")
+    return render_template("sides.html", active="sides")
 
 @views.route("/desserts")
 def desserts():
-    return render_template("desserts.html")
+    return render_template("desserts.html" , active="desserts")
 
 @views.route("/drinks")
 def drinks():
-    return render_template("drinks.html")
+    return render_template("drinks.html", active="drinks")
 
 
 # @views.route("/todos", methods=["GET", "POST"])
