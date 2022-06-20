@@ -14,3 +14,9 @@
 .active{
     background-color: red;
 }
+
+#checkout-link{
+ 
+    position:fixed;
+    background-color: aqua;
+}
