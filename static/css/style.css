@@ -1,11 +1,25 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap');
+
+
 body{
     margin: 0px;
     padding: 0px;
-    font-family:  sans-serif;
+    font-family: 'Bitter', serif;
+    font-weight:600;
+}
+
+button{
+  font-family: 'Bitter', serif;
+  font-weight:600;
+  letter-spacing: 0.1vh;
 }
 
 h2{
   text-align: center;
+  margin: 1.7vh;
+ 
 }
 
 p{
@@ -75,6 +89,9 @@ text-align: center;
 align-items: center;
 font-size: 4.2vw;
 text-decoration: none;
+font-weight: 500;
+letter-spacing: 0.05vh;
+
 /* font-family: 'Anton', sans-serif; */
 /* border: 1px solid rgb(0, 0, 0); */
 
@@ -85,13 +102,17 @@ text-decoration: none;
 
 }
 
+.active{
+  font-weight: 900;
+}
+
 /* .dark-mode {
   background-color: black;
   color: white;
 } */
 
 .active {
-  background-color: red;
+  background-color: rgb(252, 41, 41);
 }
 
 /* #checkout-wrapper{
@@ -132,7 +153,8 @@ text-decoration: none;
   width: 100%;
   background-color: rgb(27, 128, 27);
   color: white;
-  border-radius: 4px;
+  /* border-radius: 4px; */
+  /* border-top-left-radius: 4px; */
   border: none;
  padding-top: 2vw;
  padding-bottom: 2vw;
@@ -140,11 +162,14 @@ text-decoration: none;
  position: fixed;
  bottom: 0;
  margin: 0px;
- border-top: 1.5vh solid rgb(255, 255, 255);
- border-bottom: 1.5vh solid rgb(255, 255, 255);
+ border-top: 1.2vh solid rgb(255, 255, 255);
+ border-bottom: 1.2h solid rgb(255, 255, 255);
+ font-size: 2.3vh;
  /* border-top-right-radius: 4px; */
  /* margin-left: 50%; */
  /* margin-right: 50%; */
+ /* border-top-left-radius: 4px; */
+ 
 }
 
 
