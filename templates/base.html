@@ -13,11 +13,9 @@
   </head>
   <body>
     
-    <img class="center" src="{{ url_for('static', filename='images/logo.png')}}" alt="pizza company logo">
+    <img id="logo" src="{{ url_for('static', filename='images/logo.png')}}" alt="pizza company logo">
 
- <div id="checkout-wrapper">
-    <a id="checkout-link" href="">Link to checkout</a>
-  </div>
+
     <nav id="base-nav">
       {% if active == "home" %}
       <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
@@ -51,6 +49,10 @@
 
       {% endif %}
     </nav>
+
+    <div id="checkout-wrapper">
+      <button id="checkout-link" href="">Basket</button>
+    </div>
 
     {% if active in ["pizzas", "sides", "desserts", "drinks"]: %}
 

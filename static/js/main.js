@@ -3,10 +3,10 @@ function changeColour () {
     element.classList.toggle("red-link");
 };
 
-function darkMode() {
-    let element = document.body;
-    element.classList.toggle("dark-mode");
-};
+// function darkMode() {
+//     let element = document.body;
+//     element.classList.toggle("dark-mode");
+// };
 
 // let margheritaName = "Margherita ";
 // let margheritaCost = 12.99;
