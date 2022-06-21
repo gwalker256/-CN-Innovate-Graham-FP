@@ -1,7 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Drinks</h1>
+<h2>Drinks</h2>
+
+<img class="item-image" src="{{ url_for('static', filename='images/cola.png')}}" alt="picture of Cola">
+
+<p>Cola (1.5l) £2.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
+<img class="item-image" src="{{ url_for('static', filename='images/lemonade.png')}}" alt="picture of Lemonade">
+
+<p>Lemonade (1.5l) £2.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
+<img class="item-image" src="{{ url_for('static', filename='images/water.png')}}" alt="picture of Bottled Water">
+
+<p>Bottled Water (500ml) £1.49</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
 
 
 

@@ -1,7 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Desserts</h1>
+<h2>Desserts</h2>
+
+<img class="item-image" src="{{ url_for('static', filename='images/brownie.png')}}" alt="picture of Chocolate Brownie">
+
+<p>Chocolate Brownie £4.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
+<img class="item-image" src="{{ url_for('static', filename='images/cheesecake.png')}}" alt="picture of Cheesecake">
+
+<p>Cheesecake £4.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
+<img class="item-image" src="{{ url_for('static', filename='images/cookies.png')}}" alt="picture of Cookies">
+
+<p>Cookies £3.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
 
 
 

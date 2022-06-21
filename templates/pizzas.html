@@ -1,19 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Pizzas</h1>
+<h2>Pizzas</h2>
 
-<img src="{{ url_for('static', filename='images/margherita.png')}}" alt="picture of margherita pizza">
+<img class="item-image" src="{{ url_for('static', filename='images/margherita.png')}}" alt="picture of Margherita pizza">
 
-<p>description of margherita pizza</p>
+<p>Margherita £12.99</p>
 
-<button onclick="addToCart()">Add to cart</button>
+<button class="add-button" onclick="addToCart()">Add</button>
 
-<p id="cart">cart<br></p>
-<p id="total">total<br></p>
+<!-- <p id="cart">cart<br></p>
+<p id="total">total<br></p> -->
 
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum possimus doloremque sed? Hic cum recusandae impedit quis iure consectetur laborum praesentium perspiciatis nulla qui ratione, ipsa placeat possimus, facere nostrum amet tenetur commodi ipsam quod. Ipsum sapiente et pariatur, minima totam laudantium eveniet vitae quo dicta veniam ut, placeat nostrum repellendus eos. Numquam aut consequatur maxime similique, nulla exercitationem neque voluptatem labore eius assumenda nihil tempore inventore eos perspiciatis aliquam dignissimos tempora? Modi architecto veniam corrupti esse a quisquam quia, consequatur perferendis praesentium vero ab quo qui dicta consequuntur maiores temporibus sit ullam deserunt aspernatur ipsa itaque natus voluptas vel nisi? Labore, sed. Nostrum animi molestiae ut! Totam voluptates quidem reprehenderit ipsa magnam doloribus delectus blanditiis? Praesentium doloremque soluta exercitationem vero animi asperiores ratione necessitatibus, dolorum eaque quas inventore delectus quis consequatur minima repellendus deleniti tenetur, minus porro autem alias tempora error ipsum atque hic! Doloremque dolores obcaecati velit quaerat quos id dolorum sunt ipsum laboriosam architecto facere repellendus voluptatem, quis nam pariatur tempora. Ullam consequatur quidem voluptates deserunt, minima ipsa magnam impedit magni inventore maxime eum porro corporis. Minus, sequi. Qui error minus sit debitis eaque sapiente maxime maiores beatae unde quam illum esse rerum excepturi repudiandae labore voluptas sed minima exercitationem, tenetur id. Molestias, nisi ex animi modi repudiandae laborum quam minima ab cupiditate asperiores sit sequi commodi, et reiciendis totam nesciunt, eum natus delectus accusantium explicabo reprehenderit. Placeat quasi iste ullam omnis culpa officia. Optio asperiores beatae veritatis quidem in ex repellendus obcaecati natus excepturi, neque ipsa provident pariatur exercitationem! Nulla, perspiciatis fuga, dolorum iure sit ea eum esse ipsam fugiat dolorem repudiandae cupiditate reprehenderit beatae neque. Magnam dolores fugit praesentium sint eum rerum, eos neque nemo odit. Voluptates aperiam consequuntur consectetur recusandae laboriosam provident autem, dicta illum totam facilis, aliquam cum deleniti ipsam cupiditate cumque. Magni nihil nam deleniti est voluptate suscipit facere hic iusto iure nulla blanditiis facilis officiis natus exercitationem enim repudiandae recusandae ullam consectetur, optio voluptatem excepturi. Voluptates, accusantium? Animi sint, cupiditate quos porro commodi ratione officia perferendis. Incidunt, magni atque illo deleniti modi iste iure earum non maiores iusto nulla harum obcaecati suscipit porro cupiditate quibusdam perspiciatis, recusandae unde cumque pariatur nihil consequuntur! Quasi, amet rem, nostrum reprehenderit velit sequi dicta ullam iusto dolor totam fugiat laboriosam nulla optio earum, incidunt distinctio id! Autem sint, quia voluptas aut ad temporibus, voluptate modi, magnam molestias ipsam quaerat numquam odit reiciendis voluptatum ut. Delectus dolorem eius error officia ea rem porro eligendi, repellat facere minima provident debitis iure veniam sequi autem! Ab consequuntur porro quidem ipsam saepe magni sunt. Sed, quidem laborum amet vel, sequi ducimus eius necessitatibus distinctio, nulla quae reiciendis excepturi? Esse, veniam? Rerum ipsum atque, quasi repellat suscipit dignissimos cumque dolores eveniet laborum odio mollitia, optio repudiandae enim! Quos repellendus sed necessitatibus obcaecati dolores sit, sint, molestiae mollitia enim quibusdam repudiandae beatae placeat deserunt nesciunt cumque at illo impedit error porro deleniti qui ad exercitationem. Consectetur hic harum labore consequuntur architecto nisi rem vero tenetur. Officia sit nam maxime impedit magnam.</p>
+<img class="item-image" src="{{ url_for('static', filename='images/veg.png')}}" alt="picture of Veggie Delight pizza">
 
+<p>Veggie Delight £14.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
+<img class="item-image" src="{{ url_for('static', filename='images/pepperoni.png')}}" alt="picture of Pepperoni pizza">
+
+<p>Pepperoni £15.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
 
 {% endblock %}
 

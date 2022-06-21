@@ -1,7 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Sides</h1>
+<h2>Sides</h2>
+
+<img class="item-image" src="{{ url_for('static', filename='images/garlic-bread.png')}}" alt="picture of Garlic Bread">
+
+<p>Garlic Bread £3.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
+<img class="item-image" src="{{ url_for('static', filename='images/wedges.png')}}" alt="picture of Potato Wedges">
+
+<p>Potato Wedges £3.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
+
+<img class="item-image" src="{{ url_for('static', filename='images/wings.png')}}" alt="picture of Chicken Wings">
+
+<p>Chicken Wings £4.99</p>
+
+<button class="add-button" onclick="addToCart()">Add</button>
 
 
 
