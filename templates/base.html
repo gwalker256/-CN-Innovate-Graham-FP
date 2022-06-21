@@ -13,38 +13,40 @@
   </head>
   <body>
     
-    <h2 id="checkout-link">Link to checkout</h2>
+    <img class="center" src="{{ url_for('static', filename='images/logo.png')}}" alt="pizza company logo">
 
-
+ <div id="checkout-wrapper">
+    <a id="checkout-link" href="">Link to checkout</a>
+  </div>
     <nav id="base-nav">
       {% if active == "home" %}
-      <a href="{{ url_for('views.pizzas') }}">Pizzas</a>
-      <a href="{{ url_for('views.sides') }}">Sides</a>
-      <a href="{{ url_for('views.desserts') }}">Desserts</a>
-      <a href="{{ url_for('views.drinks') }}">Drinks</a>
+      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
+      <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
+      <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
 
       {% elif active == "pizzas" %}
       <a class="active" href="{{ url_for('views.pizzas') }}">Pizzas</a>
-      <a href="{{ url_for('views.sides') }}">Sides</a>
-      <a href="{{ url_for('views.desserts') }}">Desserts</a>
-      <a href="{{ url_for('views.drinks') }}">Drinks</a>
+      <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
+      <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
+      <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
 
       {% elif active == "sides" %}
-      <a href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
       <a class="active" href="{{ url_for('views.sides') }}">Sides</a>
-      <a href="{{ url_for('views.desserts') }}">Desserts</a>
-      <a href="{{ url_for('views.drinks') }}">Drinks</a>
+      <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
+      <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
 
       {% elif active == "desserts" %}
-      <a href="{{ url_for('views.pizzas') }}">Pizzas</a>
-      <a href="{{ url_for('views.sides') }}">Sides</a>
+      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
       <a class="active" href="{{ url_for('views.desserts') }}">Desserts</a>
-      <a href="{{ url_for('views.drinks') }}">Drinks</a>
+      <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
 
       {% elif active == "drinks" %}
-      <a href="{{ url_for('views.pizzas') }}">Pizzas</a>
-      <a href="{{ url_for('views.sides') }}">Sides</a>
-      <a href="{{ url_for('views.desserts') }}">Desserts</a>
+      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
+      <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
       <a class="active" href="{{ url_for('views.drinks') }}">Drinks</a>
 
       {% endif %}
