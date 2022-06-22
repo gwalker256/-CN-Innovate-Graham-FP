@@ -1,44 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap');
-
-
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Bitter', serif;
-    font-weight:600;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bitter", serif;
+  font-weight: 600;
+  font-size: 4.5vw;
 }
 
-button{
-  font-family: 'Bitter', serif;
-  font-weight:600;
+button {
+  font-family: "Bitter", serif;
+  font-weight: 600;
   letter-spacing: 0.1vh;
 }
 
-h2{
+h2 {
   text-align: center;
   margin: 1.7vh;
- 
 }
 
-p{
+p {
   text-align: center;
 }
 
-.item-image{
+.item-image {
   width: 75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
- 
 }
 
-.add-button{
+.add-button {
   display: block;
   margin: auto;
   margin-bottom: 5%;
-  
+
   /* margin-left: 50%;
   margin-right: 50%; */
   width: 88%;
@@ -46,21 +42,18 @@ p{
   color: white;
   border-radius: 4px;
   border: none;
- padding: 2vw;
- font-size: 2vh;
-/* text-align: center; */
-
+  padding: 2vw;
+  font-size: 4.5vw;
+  /* text-align: center; */
 }
 
-#logo{
-   
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15vh;
-    padding: 2vw;
-    /* border: 1px solid rgb(22, 22, 22) */
-  
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15vh;
+  padding: 2vw;
+  /* border: 1px solid rgb(22, 22, 22) */
 }
 
 #base-nav {
@@ -68,41 +61,35 @@ p{
   justify-content: space-evenly;
   background-color: rgba(63, 62, 62);
   color: white;
-  height: 5vh;
-  align-items:center;
-  justify-content:center;
-  
+  height: 10vw;
+  align-items: center;
+  justify-content: center;
 
   /* width: 100%; */
 }
 
-
-
-.nav-link, .active{
+.nav-link,
+.active {
   height: 100%;
-   display: flex;
+  display: flex;
   /* align-items:center; */
-  justify-content:center;
-width: 25vw;
-color: white;
-text-align: center;
-align-items: center;
-font-size: 4.2vw;
-text-decoration: none;
-font-weight: 500;
-letter-spacing: 0.05vh;
+  justify-content: center;
+  width: 25vw;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 4.2vw;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.05vh;
 
-/* font-family: 'Anton', sans-serif; */
-/* border: 1px solid rgb(0, 0, 0); */
+  /* font-family: 'Anton', sans-serif; */
+  /* border: 1px solid rgb(0, 0, 0); */
 
-/* height: 100%; */
-
-
-
-
+  /* height: 100%; */
 }
 
-.active{
+.active {
   font-weight: 900;
 }
 
@@ -125,7 +112,6 @@ letter-spacing: 0.05vh;
 } */
 
 #checkout-linkEDITNOTTOWORK {
- 
   position: fixed;
   /* left: 50%; */
   bottom: 0;
@@ -139,15 +125,15 @@ letter-spacing: 0.05vh;
   color: white;
   border-radius: 4px;
   border: none;
- padding: 2vw;
- text-decoration: none;
- font-size: 2vh;
+  padding: 2vw;
+  text-decoration: none;
+  font-size: 2vh;
 }
 
-#checkout-link{
+#checkout-link {
   display: block;
   margin: auto;
-  
+
   /* margin-left: 50%; */
   /* margin-right: 50%; */
   width: 100%;
@@ -156,23 +142,30 @@ letter-spacing: 0.05vh;
   /* border-radius: 4px; */
   /* border-top-left-radius: 4px; */
   border: none;
- padding-top: 2vw;
- padding-bottom: 2vw;
- font-size: 2vh;
- position: fixed;
- bottom: 0;
- margin: 0px;
- border-top: 1.2vh solid rgb(255, 255, 255);
- border-bottom: 1.2h solid rgb(255, 255, 255);
- font-size: 2.3vh;
- /* border-top-right-radius: 4px; */
- /* margin-left: 50%; */
- /* margin-right: 50%; */
- /* border-top-left-radius: 4px; */
- 
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-size: 2vh;
+  position: fixed;
+  bottom: 0;
+  margin: 0px;
+  border-top: 1.2vh solid rgb(255, 255, 255);
+  border-bottom: 1.2h solid rgb(255, 255, 255);
+  font-size: 5.5vw;
+  /* border-top-right-radius: 4px; */
+  /* margin-left: 50%; */
+  /* margin-right: 50%; */
+  /* border-top-left-radius: 4px; */
 }
 
+/* background-color: aqua; */
 
+@media screen and (min-width: 800px) {
+  #base-nav {
+    height: 5vw;
+  }
 
-
-  /* background-color: aqua; */
+  .nav-link,
+  .active {
+    font-size: 2.8vw;
+  }
+}
