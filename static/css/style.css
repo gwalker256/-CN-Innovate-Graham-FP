@@ -92,7 +92,7 @@ h2 {
 
 .active {
   font-weight: 900;
-  background-color: rgb(252, 41, 41)
+  background-color: rgb(252, 41, 41);
 }
 
 /* .dark-mode {
@@ -112,8 +112,6 @@ h2 {
   width: 100%;
 
 } */
-
-
 
 #checkout-wrapper {
   display: block;
@@ -141,15 +139,14 @@ h2 {
   /* margin-right: 50%; */
   /* border-top-left-radius: 4px; */
 
-width: 95%;
+  width: 95%;
 
+  left: 50%;
 
-left: 50%;
-
-margin-left: -47.5%;
+  margin-left: -47.5%;
 }
 
-#checkout-link{
+#checkout-link {
   background-color: rgb(27, 128, 27);
   color: white;
   font-size: 5.5vw;
@@ -160,6 +157,7 @@ margin-left: -47.5%;
   border-radius: 4px;
   width: 100%;
   padding: 2vw;
+  border: none;
 }
 
 /* background-color: aqua; */
@@ -174,47 +172,92 @@ margin-left: -47.5%;
     font-size: 2.8vw;
   }
 
-h2{
-  font-size: 5vw;
-  margin: 3.5vw;
-}
+  h2 {
+    font-size: 5vw;
+    margin: 3.5vw;
+  }
 
-p{
-  font-size: 2.5vw;
-  margin: 3vw;
-}
+  p {
+    font-size: 2.5vw;
+    margin: 3vw;
+  }
 
+  .add-button {
+    width: 20vw;
 
+    font-size: 2.5vw;
+  }
 
-.add-button {
+  #checkout-wrapper {
+    width: 100%;
 
+    margin-left: -50%;
+    background-color: white;
+  }
 
-  width: 30vw;
+  #checkout-link {
+    /* background-color: rgb(27, 128, 27); */
+    /* color: white; */
+    font-size: 3vw;
+    /* border-radius: 4px; */
+    /* padding: 2vw; */
+    width: 25vw;
+  }
+  .item-image {
+    width: 30%;
 
-  font-size: 3vw;
-
-}
-
-
-
-#checkout-wrapper{
-
-  width: 100%;
-
-  margin-left: -50%;
-  background-color: white;
-}
-
-#checkout-link{
-  background-color: rgb(27, 128, 27);
-  color: white;
-  font-size: 4vw;
-  border-radius: 4px;
-  padding: 2vw;
-  width: 35vw;
-}
+  }
 
 
 }
 
+@media screen and (min-width: 1200px) {
 
+  #base-nav {
+    height: 3.5vw;
+  }
+
+  .nav-link,
+  .active {
+    font-size: 2.5vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+    margin: 3.5vw;
+  }
+
+  p {
+    font-size: 2vw;
+    margin: 3vw;
+  }
+
+  .add-button {
+    width: 15vw;
+
+    font-size: 2vw;
+  }
+
+  /* #checkout-wrapper {
+    width: 100%;
+
+    margin-left: -50%;
+    background-color: white;
+  } */
+
+  #checkout-link {
+    /* background-color: rgb(27, 128, 27); */
+    /* color: white; */
+    font-size: 2.5vw;
+    /* border-radius: 4px; */
+    /* padding: 2vw; */
+    width: 20vw;
+  }
+
+
+
+
+
+
+
+}
