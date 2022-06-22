@@ -51,8 +51,10 @@
     </nav>
 
     <div id="checkout-wrapper">
-      <button id="checkout-link" href="">View Basket</button>
+      <button id="checkout-link" href="{{ url_for('views.basket') }}">View Basket</button>
     </div>
+
+    <a href="{{ url_for('views.basket') }}">basket</a>
 
     {% if active in ["pizzas", "sides", "desserts", "drinks"]: %}
 
@@ -66,7 +68,7 @@
 
 
     {% block content %} {% endblock %}
-
+    <!-- <script src="{{ url_for('static', filename='js/storage.js') }}"></script> -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
 </html>

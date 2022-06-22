@@ -1,3 +1,36 @@
+let numItems = 0
+
+
+function addItemToCart(ele){
+    numItems++;
+    // let thingForCart = JSON.stringify(ele.basketitem);
+    let priceOfItem = Number(ele.getAttribute("basketprice"));
+    let thingForCart = ele.getAttribute("basketitem");
+    // let priceOfItem = ele.basketprice;
+    // console.log(document.getElementById(id))
+    // let id = ele.id;
+    // let test = ele.getAttribute("data-test");
+    
+    console.log(thingForCart, priceOfItem);
+
+        localStorage.setItem(numItems, [priceOfItem, thingForCart]);
+        
+        console.log(numItems)
+        // let basketDiv = document.getElementById("basket-div")
+        // basketDiv.innerHTML = basketDiv.innerHTML + (localStorage.getItem(numItems))
+//         let cartElement = document.getElementById("cart");
+//         cartElement.innerHTML = cartElement.innerHTML + (localStorage.getItem(itemAmount) + margheritaCost + "<br>");
+// // basketDiv.innerHTML = basketDiv.innerHTML + thingForCart, priceOfItem;
+        // console.log(localStorage.getItem(1[1]))
+
+        // console.log(numItems)
+    // console.log(ele)
+    // console.log(id);
+    // console.log(test);
+    // localStorage.clear();
+};
+
+
 // function changeColour () {
 //     let element = document.getElementById("pizzas-nav");
 //     element.classList.toggle("red-link");
@@ -31,26 +64,26 @@
 //     localStorage.setItem("lastname", "Smith");
 // localStorage.getItem("lastname");
 
-let margheritaName = "Margherita "
-let margheritaCost = 12.99;
+// let margheritaName = "Margherita "
+// let margheritaCost = 12.99;
 
-let cartItems = [];
-let cartTotal = 0;
-let itemAmount = 0
+// let cartItems = [];
+// let cartTotal = 0;
+// let itemAmount = 0
 
-function addToCart () {
-itemAmount = itemAmount + 1;
-localStorage.setItem((itemAmount), (margheritaName));
-localStorage.setItem("totalCost", (cartTotal + margheritaCost));
-cartTotal = cartTotal + margheritaCost;
+// function addToCart () {
+// itemAmount = itemAmount + 1;
+// localStorage.setItem((itemAmount), (margheritaName));
+// localStorage.setItem("totalCost", (cartTotal + margheritaCost));
+// cartTotal = cartTotal + margheritaCost;
     
-    let cartElement = document.getElementById("cart");
-    cartElement.innerHTML = cartElement.innerHTML + (localStorage.getItem(itemAmount) + margheritaCost + "<br>");
-    let totalElement = document.getElementById("total");
-    totalElement.innerHTML = (localStorage.getItem("totalCost"));
+//     let cartElement = document.getElementById("cart");
+//     cartElement.innerHTML = cartElement.innerHTML + (localStorage.getItem(itemAmount) + margheritaCost + "<br>");
+//     let totalElement = document.getElementById("total");
+//     totalElement.innerHTML = (localStorage.getItem("totalCost"));
     
-    // return cartTotal, margheritaCost;
-    }
+//     // return cartTotal, margheritaCost;
+//     }
 
 // fetch("/static/js/products.json")
 // .then(function(response){

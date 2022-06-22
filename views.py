@@ -26,6 +26,10 @@ def desserts():
 def drinks():
     return render_template("drinks.html", active="drinks")
 
+@views.route("/basket")
+def basket():
+    return render_template("basket.html")
+
 # @views.errorhandler(404)
 # def not_found(e):
 #     return render_template("error.html"), 404

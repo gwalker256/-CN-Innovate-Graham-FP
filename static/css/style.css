@@ -9,6 +9,27 @@ body {
   text-align: center;
 }
 
+
+
+
+
+
+
+.item-price-wrapper{
+display: flex; 
+justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 button {
   font-family: "Bitter", serif;
   font-weight: 600;
@@ -144,6 +165,7 @@ h2 {
   left: 50%;
 
   margin-left: -47.5%;
+  
 }
 
 #checkout-link {
@@ -158,6 +180,7 @@ h2 {
   width: 100%;
   padding: 2vw;
   border: none;
+  
 }
 
 /* background-color: aqua; */
