@@ -17,6 +17,11 @@ function doShowAll() {
     clearButton.classList.toggle("invisible");
     let poundBox = document.getElementById("pound-box");
     poundBox.classList.toggle("invisible");
+    let listStyler = document.getElementById("list");
+    listStyler.classList.toggle("empty-cart");
+    let unavailable = document.getElementById("checkout-unavailable");
+    unavailable.classList.toggle("invisible");
+
 
     list += "Basket Empty";
   }
@@ -27,6 +32,8 @@ function doShowAll() {
 }
 
 function ClearAll() {
-  localStorage.clear();
-  doShowAll();
+  if (localStorage.length > 0) {
+    localStorage.clear();
+    doShowAll();
+  }
 }

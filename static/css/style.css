@@ -9,12 +9,23 @@ body {
   text-align: center;
 }
 
+#error {
+  margin-top: 50%;
+}
+
+.empty-cart {
+  font-size: 8vw;
+  padding-top: 15vh;
+}
+
 #list {
-  margin-top: 5vw;
+  margin-top: 18%;
+  margin-bottom: 10%;
 }
 
 ul {
   padding: 0;
+  margin-bottom: 5vw;
 }
 
 .invisible {
@@ -33,12 +44,27 @@ a {
 #total-box {
   display: flex;
   justify-content: center;
+  margin-bottom: 3vh;
+  margin-top: 6vh;
+  font-weight: 900;
 }
 
 button {
   font-family: "Bitter", serif;
   font-weight: 600;
   letter-spacing: 0.1vh;
+  display: block;
+  margin: auto;
+  margin-bottom: 5%;
+  width: 88%;
+  background-color: rgb(243, 64, 64);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 2vw;
+  font-size: 4.5vw;
+  line-height: 8vw;
+  cursor: pointer;
 }
 
 h2 {
@@ -53,17 +79,11 @@ h2 {
 }
 
 .add-button {
-  display: block;
-  margin: auto;
-  margin-bottom: 5%;
-
-  width: 88%;
   background-color: rgb(27, 128, 27);
-  color: white;
-  border-radius: 4px;
-  border: none;
-  padding: 2vw;
-  font-size: 4.5vw;
+}
+
+.red-button {
+  background-color: rgb(243, 64, 64);
 }
 
 #logo {
@@ -206,14 +226,33 @@ h2 {
   }
 
   .add-button {
-    width: 15vw;
+    width: 20vw;
+    /* height: 50%; */
 
     font-size: 2vw;
   }
 
   #checkout-link {
     font-size: 2.5vw;
+   
+    width: 40vw;
+ 
+  }
 
-    width: 20vw;
+  #checkout-wrapper {
+    width: 100%;
+    height: 15vh;
+    padding-top:0 ;
+
+    margin-left: -50%;
+    background-color: white;
+    z-index: 100;
+    
+  }
+
+
+  .add-button {
+    
+
   }
 }

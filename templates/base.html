@@ -49,7 +49,7 @@
       <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
       <a class="active" href="{{ url_for('views.drinks') }}">Drinks</a>
 
-      {% elif active == "basket" %}
+      {% elif active == "basket" or active == "error" %}
       <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
       <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
       <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
@@ -58,7 +58,7 @@
       {% endif %}
     </nav>
 
-    {% if active != "basket" %}
+    {% if active != "basket" and active != "error" %}
     <div id="checkout-wrapper">
       <a href="{{ url_for('views.basket') }}"
         ><button id="checkout-link">View Basket</button></a
