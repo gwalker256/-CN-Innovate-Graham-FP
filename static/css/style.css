@@ -162,6 +162,13 @@ h2 {
   border: none;
 }
 
+
+@media screen and (min-width: 600px){
+#error {
+  margin-top: 20%;
+}
+}
+
 @media screen and (min-width: 800px) {
   #base-nav {
     height: 5vw;
@@ -182,77 +189,113 @@ h2 {
     margin: 3vw;
   }
 
-  .add-button {
-    width: 20vw;
 
-    font-size: 2.5vw;
+
+  button {
+    transform: scale(0.4);
   }
 
-  #checkout-wrapper {
-    width: 100%;
 
-    margin-left: -50%;
-    background-color: white;
+
+  #checkout-wrapper {
+    padding: 0;
+    height: 10vh;
+    z-index: 2000;
+
+    border: 0;
   }
 
   #checkout-link {
-    font-size: 3vw;
-
-    width: 25vw;
+    font-size: 5.5vw;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    width: 80vh;
+    padding: 0;
+    border: none;
+    z-index: 3000;
   }
+
   .item-image {
     width: 30%;
+  }
+  #error {
+    margin-top: 20%;
+  }
+
+  #list {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2vw;
+  }
+
+  ul {
+    padding: 0;
+    margin-bottom: 1vw;
+  }
+
+
+  
+  .empty-cart {
+    font-size: 8vw;
+    padding-top: 15vh;
+  }
+  
+
+  
+  
+  .item-price-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #total-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 900;
+    height: 1vh;
+  }
+
+  p {
+    font-size: 2.5vw;
+    margin: 0;
+  }
+  
+  #checkout-unavailable{
+    
+
+    margin-bottom: 0;
+
+    padding: 0;
+
+  }
+  #clear-button{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #base-nav {
-    height: 3.5vw;
+
+  #error {
+    margin-top: 15%;
   }
 
-  .nav-link,
-  .active {
-    font-size: 2.5vw;
-  }
-
-  h2 {
-    font-size: 3vw;
-    margin: 3.5vw;
-  }
-
-  p {
+  #list {
+    margin-top: 4%;
+    margin-bottom: 0;
     font-size: 2vw;
-    margin: 3vw;
+    font-size: 1.2vw;
   }
 
-  .add-button {
-    width: 20vw;
-    /* height: 50%; */
-
-    font-size: 2vw;
-  }
-
-  #checkout-link {
-    font-size: 2.5vw;
-   
-    width: 40vw;
- 
-  }
-
-  #checkout-wrapper {
-    width: 100%;
-    height: 15vh;
-    padding-top:0 ;
-
-    margin-left: -50%;
-    background-color: white;
-    z-index: 100;
-    
-  }
-
-
-  .add-button {
-    
+  .item-image {
+    max-width:300px;
 
   }
+
 }
