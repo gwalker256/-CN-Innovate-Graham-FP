@@ -1,8 +1,10 @@
-let numItems = 0
+// let numItems = 0
+// let priceTotal = 0
+
 
 
 function addItemToCart(ele){
-    numItems++;
+    
     // let thingForCart = JSON.stringify(ele.basketitem);
     let priceOfItem = Number(ele.getAttribute("basketprice"));
     let thingForCart = ele.getAttribute("basketitem");
@@ -12,10 +14,26 @@ function addItemToCart(ele){
     // let test = ele.getAttribute("data-test");
     
     console.log(thingForCart, priceOfItem);
+    // priceTotal = priceTotal + priceOfItem
 
-        localStorage.setItem(numItems, [priceOfItem, thingForCart]);
+
+numItems = localStorage.length;
+
+    localStorage.setItem(numItems, thingForCart + "&nbsp;£" + priceOfItem);
+
+
+
+        // localStorage.setItem(numItems, [priceOfItem, thingForCart]);
         
         console.log(numItems)
+        // console.log(priceTotal)
+        // localStorage.setItem("total", (priceTotal));
+
+let curTotal = Number(localStorage.getItem("total"))
+let newTotal = Number(curTotal + priceOfItem)
+        localStorage.setItem("total", (newTotal.toFixed(2)));
+
+
         // let basketDiv = document.getElementById("basket-div")
         // basketDiv.innerHTML = basketDiv.innerHTML + (localStorage.getItem(numItems))
 //         let cartElement = document.getElementById("cart");

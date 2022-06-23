@@ -27,9 +27,9 @@
 
 
 
-<p>Margherita £12.99</p>
+<!-- <p>Margherita £12.99</p>
 
-<button class="add-button" onclick="addToCart()">Add</button>
+<button class="add-button" onclick="addToCart()">Add</button> -->
 
 <!-- <p id="cart">cart<br></p>
 <p id="total">total<br></p> -->
@@ -38,13 +38,15 @@
 
 <p>Veggie Delight £14.99</p>
 
-<button class="add-button" onclick="addToCart()">Add</button>
+<button basketitem="Veggie Delight" basketprice="14.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
+
+<!-- <button class="add-button" onclick="addToCart()">Add</button> -->
 
 <img class="item-image" src="{{ url_for('static', filename='images/pepperoni.png')}}" alt="picture of Pepperoni pizza">
 
 <p>Pepperoni £15.99</p>
 
-<button class="add-button" onclick="addToCart()">Add</button>
+<button basketitem="Pepperoni" basketprice="15.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
 <br>
 <br>
 <br>

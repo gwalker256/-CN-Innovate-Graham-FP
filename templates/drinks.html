@@ -7,19 +7,19 @@
 
 <p>Cola (1.5l) £2.99</p>
 
-<button class="add-button" onclick="addToCart()">Add</button>
+<button basketitem="Cola" basketprice="2.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
 
 <img class="item-image" src="{{ url_for('static', filename='images/lemonade.png')}}" alt="picture of Lemonade">
 
 <p>Lemonade (1.5l) £2.99</p>
 
-<button class="add-button" onclick="addToCart()">Add</button>
+<button basketitem="Lemonade" basketprice="2.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
 
 <img class="item-image" src="{{ url_for('static', filename='images/water.png')}}" alt="picture of Bottled Water">
 
 <p>Bottled Water (500ml) £1.49</p>
 
-<button class="add-button" onclick="addToCart()">Add</button>
+<button basketitem="Bottled Water" basketprice="1.49"  class="add-button" onclick="addItemToCart(this)">Add</button>
 
 <br>
 <br>

@@ -47,14 +47,28 @@
       <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
       <a class="active" href="{{ url_for('views.drinks') }}">Drinks</a>
 
+      {% elif active == "basket" %}
+      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
+      <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
+      <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
+
       {% endif %}
     </nav>
 
-    <div id="checkout-wrapper">
+    <!-- <div id="checkout-wrapper">
       <button id="checkout-link" href="{{ url_for('views.basket') }}">View Basket</button>
+    </div> -->
+    {% if active != "basket" %}
+    <div id="checkout-wrapper">
+      <a href="{{ url_for('views.basket') }}"><button id="checkout-link">View Basket</button></a>
     </div>
 
-    <a href="{{ url_for('views.basket') }}">basket</a>
+    {% endif %}
+
+
+
+
 
     {% if active in ["pizzas", "sides", "desserts", "drinks"]: %}
 

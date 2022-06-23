@@ -28,7 +28,7 @@ def drinks():
 
 @views.route("/basket")
 def basket():
-    return render_template("basket.html")
+    return render_template("basket.html", active="basket")
 
 # @views.errorhandler(404)
 # def not_found(e):
