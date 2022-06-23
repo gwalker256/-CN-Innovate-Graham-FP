@@ -1,29 +1,60 @@
-{% extends 'base.html' %}
-
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <h2>Sides</h2>
 
-<img class="item-image" src="{{ url_for('static', filename='images/garlic-bread.png')}}" alt="picture of Garlic Bread">
+<img
+  class="item-image"
+  src="{{ url_for('static', filename='images/garlic-bread.png')}}"
+  alt="picture of Garlic Bread"
+/>
 
 <p>Garlic Bread £3.99</p>
 
-<button basketitem="Garlic Bread" basketprice="3.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
+<button
+  basketitem="Garlic Bread"
+  basketprice="3.99"
+  class="add-button"
+  onclick="addItemToCart(this)"
+>
+  Add
+</button>
 
-<img class="item-image" src="{{ url_for('static', filename='images/wedges.png')}}" alt="picture of Potato Wedges">
+<img
+  class="item-image"
+  src="{{ url_for('static', filename='images/wedges.png')}}"
+  alt="picture of Potato Wedges"
+/>
 
 <p>Potato Wedges £3.99</p>
 
-<button basketitem="Potato Wedges" basketprice="3.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
+<button
+  basketitem="Potato Wedges"
+  basketprice="3.99"
+  class="add-button"
+  onclick="addItemToCart(this)"
+>
+  Add
+</button>
 
-<img class="item-image" src="{{ url_for('static', filename='images/wings.png')}}" alt="picture of Chicken Wings">
+<img
+  class="item-image"
+  src="{{ url_for('static', filename='images/wings.png')}}"
+  alt="picture of Chicken Wings"
+/>
 
 <p>Chicken Wings £4.99</p>
 
-<button basketitem="Chicken Wings" basketprice="4.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
+<button
+  basketitem="Chicken Wings"
+  basketprice="4.99"
+  class="add-button"
+  onclick="addItemToCart(this)"
+>
+  Add
+</button>
 
-<br>
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
+<br />
 
 {% endblock %}

@@ -1,30 +1,60 @@
-{% extends 'base.html' %}
-
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <h2>Desserts</h2>
 
-<img class="item-image" src="{{ url_for('static', filename='images/brownie.png')}}" alt="picture of Chocolate Brownie">
+<img
+  class="item-image"
+  src="{{ url_for('static', filename='images/brownie.png')}}"
+  alt="picture of Chocolate Brownie"
+/>
 
 <p>Chocolate Brownie £4.99</p>
 
-<button basketitem="Chocolate Brownie" basketprice="4.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
+<button
+  basketitem="Chocolate Brownie"
+  basketprice="4.99"
+  class="add-button"
+  onclick="addItemToCart(this)"
+>
+  Add
+</button>
 
-<img class="item-image" src="{{ url_for('static', filename='images/cheesecake.png')}}" alt="picture of Cheesecake">
+<img
+  class="item-image"
+  src="{{ url_for('static', filename='images/cheesecake.png')}}"
+  alt="picture of Cheesecake"
+/>
 
 <p>Cheesecake £4.99</p>
 
-<button basketitem="Cheesecake" basketprice="4.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
+<button
+  basketitem="Cheesecake"
+  basketprice="4.99"
+  class="add-button"
+  onclick="addItemToCart(this)"
+>
+  Add
+</button>
 
-<img class="item-image" src="{{ url_for('static', filename='images/cookies.png')}}" alt="picture of Cookies">
+<img
+  class="item-image"
+  src="{{ url_for('static', filename='images/cookies.png')}}"
+  alt="picture of Cookies"
+/>
 
 <p>Cookies £3.99</p>
 
-<button basketitem="Cookies" basketprice="3.99"  class="add-button" onclick="addItemToCart(this)">Add</button>
+<button
+  basketitem="Cookies"
+  basketprice="3.99"
+  class="add-button"
+  onclick="addItemToCart(this)"
+>
+  Add
+</button>
 
-
-<br>
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
+<br />
 
 {% endblock %}

@@ -1,29 +1,14 @@
-{% extends 'base.html' %} 
-
-{% block content %}
-
-<!-- <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
-<a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
-<a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
-<a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a> -->
+{% extends 'base.html' %} {% block content %}
 
 <div id="list"></div>
 
 <button id="clear-button" onclick="ClearAll()">Clear Basket</button>
 
-<!-- <p id="total">Total £</p> -->
-
-
 <div id="total-box">
-    <p id="pound-box">Basket Total £</p>
-    <p id="total"></p>
-  </div>
-
-<!-- <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a> -->
-
-<!-- <div id="basket-div">Basket</div> -->
+  <p id="pound-box">Basket Total £</p>
+  <p id="total"></p>
+</div>
 
 <script src="{{ url_for('static', filename='js/storage.js') }}"></script>
-<!-- <script>window.load=doShowAll();</script> -->
 
 {% endblock %}

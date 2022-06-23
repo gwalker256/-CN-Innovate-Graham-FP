@@ -12,9 +12,11 @@
     />
   </head>
   <body>
-    
-    <img id="logo" src="{{ url_for('static', filename='images/logo.png')}}" alt="pizza company logo">
-
+    <img
+      id="logo"
+      src="{{ url_for('static', filename='images/logo.png')}}"
+      alt="pizza company logo"
+    />
 
     <nav id="base-nav">
       {% if active == "home" %}
@@ -56,33 +58,16 @@
       {% endif %}
     </nav>
 
-    <!-- <div id="checkout-wrapper">
-      <button id="checkout-link" href="{{ url_for('views.basket') }}">View Basket</button>
-    </div> -->
     {% if active != "basket" %}
     <div id="checkout-wrapper">
-      <a href="{{ url_for('views.basket') }}"><button id="checkout-link">View Basket</button></a>
+      <a href="{{ url_for('views.basket') }}"
+        ><button id="checkout-link">View Basket</button></a
+      >
     </div>
 
-    {% endif %}
+    {% endif %} {% if active in ["pizzas", "sides", "desserts", "drinks"]: %} {%
+    endif %} {% block content %} {% endblock %}
 
-
-
-
-
-    {% if active in ["pizzas", "sides", "desserts", "drinks"]: %}
-
-
-
-
-
-    {% endif %}
-
-
-
-
-    {% block content %} {% endblock %}
-    <!-- <script src="{{ url_for('static', filename='js/storage.js') }}"></script> -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
 </html>
