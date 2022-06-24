@@ -8,9 +8,9 @@ def home():
     return render_template("index.html", active="home")
 
 
-@views.route("/pizzas")
-def pizzas():
-    return render_template("pizzas.html", active="pizzas")
+# @views.route("/pizzas")
+# def pizzas():
+#     return render_template("pizzas.html", active="pizzas")
 
 
 @views.route("/sides")

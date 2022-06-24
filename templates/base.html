@@ -20,37 +20,33 @@
 
     <nav id="base-nav">
       {% if active == "home" %}
-      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="active" href="{{ url_for('views.home') }}">Pizzas</a>
       <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
       <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
       <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
 
-      {% elif active == "pizzas" %}
-      <a class="active" href="{{ url_for('views.pizzas') }}">Pizzas</a>
-      <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
-      <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
-      <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
+
 
       {% elif active == "sides" %}
-      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.home') }}">Pizzas</a>
       <a class="active" href="{{ url_for('views.sides') }}">Sides</a>
       <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
       <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
 
       {% elif active == "desserts" %}
-      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.home') }}">Pizzas</a>
       <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
       <a class="active" href="{{ url_for('views.desserts') }}">Desserts</a>
       <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
 
       {% elif active == "drinks" %}
-      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.home') }}">Pizzas</a>
       <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
       <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
       <a class="active" href="{{ url_for('views.drinks') }}">Drinks</a>
 
       {% elif active == "basket" or active == "error" %}
-      <a class="nav-link" href="{{ url_for('views.pizzas') }}">Pizzas</a>
+      <a class="nav-link" href="{{ url_for('views.home') }}">Pizzas</a>
       <a class="nav-link" href="{{ url_for('views.sides') }}">Sides</a>
       <a class="nav-link" href="{{ url_for('views.desserts') }}">Desserts</a>
       <a class="nav-link" href="{{ url_for('views.drinks') }}">Drinks</a>
